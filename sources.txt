@@ -1,0 +1,67 @@
+# Sources used for this project
+
+
+### 10 poems
+https://classicalpoets.org/2016/01/07/10-greatest-poems-ever-written/
+
+
+### Multiline to single line conversion (custom deliminator for new line)
+https://lingojam.com/TexttoOneLine
+
+
+
+### Keypress != keydown
+https://stackoverflow.com/questions/4843472/javascript-listener-keypress-doesnt-detect-backspace
+- KeyPress event is invoked only for character (printable) keys, 
+- KeyDown event is raised for all including nonprintable such as Control, Shift, Alt, BackSpace, etc.
+
+### Descenndant selectors
+https://www.w3.org/TR/CSS2/selector.html#descendant-selectors
+- ```h1 { color: red }
+em { color: red }
+h1 em { color: blue }```
+- div * p 
+
+### Focus() method
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus
+- will force focus for the user
+
+
+### Eventlistener("focus", ...)
+https://developer.mozilla.org/en-US/docs/Web/API/Element/focus_event
+- will trigger the event when user initiates focus
+
+
+### List ov events
+https://dbchung3.medium.com/add-event-listener-dom-event-types-6c10a844c9d8
+https://developer.mozilla.org/en-US/docs/Web/Events#event_listing
+- 'change' : only triggers when user removes focus (blur). Thus will not detect change as user is typing
+- 'keydown' is retrieving the value before the 'keydown'-value is added to the textarea
+- 'keyup' works well. But will not trigger 'immediately' or during long presses
+
+### rgba-function
+https://www.w3schools.com/cssref/func_rgba.php
+- background-color:rgba(255,0,0,0.3)
+- :: span_char_array[i].style.backgroundColor = 'rgba(0, 100, 0, 0.3)';
+
+
+### Appending elements
+https://developer.mozilla.org/en-US/docs/Web/API/Element/append
+```let div = document.createElement("div");
+let p = document.createElement("p");
+div.append(p);```
+
+
+### calc() - set calculated height wieth in CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+- width: calc(100% - 30px);
+
+
+### Make element stick duing scroll
+https://stackoverflow.com/questions/18746569/force-div-element-to-stay-in-same-place-when-page-is-scrolled
+- Change position:absolute to position:fixed;.
+
+
+
+
+
