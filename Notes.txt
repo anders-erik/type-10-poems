@@ -1,0 +1,12 @@
+
+
+
+2023-11-20T2045UTC+1
+Refactored to some extent. 
+I now bypass the fetch api call to get the small amount of json-data, and the dynamic typing is handled by a 'Typewriter'-class. 
+I still need to significantly refactor to make the project managable.
+
+As always I hit severe scope-roadblocks. 
+Very uncertain about what object should be global, passed as function parameters, and when you can access a variable after an eventlistener i triggered.
+
+

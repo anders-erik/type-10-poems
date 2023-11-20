@@ -95,3 +95,17 @@ https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-n
   }
 - 
 
+
+### Positioning a child-node relative to its parent
+https://stackoverflow.com/questions/10487292/position-absolute-but-relative-to-parent
+- #parent {
+   position: relative;
+}
+    
+#child1 {
+   position: absolute;
+   top: 0;
+}
+
+- This works because position: absolute means something like "use top, right, bottom, left to position yourself in relation to the nearest ancestor who has position: absolute or position: relative."
+  This is the same working principle for height or width, when you use a relative unit. The value is applied in relation to the containing block.
