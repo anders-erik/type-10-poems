@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
@@ -5,12 +6,11 @@ body {
 }
 
 #cont_0 {
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
-
 }
 
 header {
@@ -19,35 +19,27 @@ header {
     text-align: center;
 }
 
+
 main {
-    background-color: aliceblue;
-    padding: 1em;
+    background-color: blueviolet;
     flex-grow: 1;
 
     display: flex;
     flex-direction: column;
 
 }
-#text_input {
-    height: 100px;
-    position: fixed;
-    left: 0em;
-    top: calc(100% - 100px);
-    width: calc(100%);
-    background-color: rgba(255, 255, 255, 0.95);
-}
 
-#output_container {
-    font-size: 3rem;
-    padding-top: 1em;
-}
-
-#poem_list_container {
+#poemMenuDiv {
     background-color: aqua;
-    padding: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
 }
+
+#containerDiv {
+    overflow: hidden;
+    flex-grow: 1;
+    position: relative;
+}
+#typewriterDiv {
+    position: absolute;
+    top: 0px;
+}
+

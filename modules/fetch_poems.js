@@ -10,13 +10,7 @@ export let fetch_poems = function(uri){
     return response.json();
   })
   .then(data => {
-    // Handle the JSON data
-    //console.log(typeof(data));
-    console.log('data:');
-    console.log(data);
-    poem_object_array = data;
-    populate_poem_container();
-    
+    return data;
   })
   .catch(error => {
     // Handle errors during the fetch
@@ -24,7 +18,5 @@ export let fetch_poems = function(uri){
   });
 
 }
-function calb(){
-    console.log('called back');
-}
+
 
